@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+body{
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-wrapper{
+    background: rgb(13, 13, 13);
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.form-wrapper h2{
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+}
+.clipboard{
+    height: 70px;
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    background: black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.clipboard .clip-icon{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: lightskyblue;
+    padding: 15px;
+}
+.password{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: white;
+    transform: translateY(-50%);
+    cursor: grab;
+    user-select: none;
+}
+.form-item{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    margin: 20px 0;
+}
+.form-item label{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-item #passwordLength{
+    width: 10%;
+}
+.form-item input[type="checkbox"]{
+    width: 5%;
+}
+form button{
+    width: 100%;
+    background-color: lightskyblue;
+    border-radius: 7px;
+    border: 2px solid lightblue;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 40px;
+}
